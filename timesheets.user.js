@@ -50,6 +50,10 @@ $(document).ready(function()
         autoOpen: false,
         //         height: 400,
         //         width: 350,
+        //position: ['center','20px'],
+        position: { of: window, my: "top+30", at: "top+30" },
+        //position: { my: "center", at: "top+30" },
+
         buttons: {
             "Ok": saveHoraire,
             Cancel: function() {
@@ -60,6 +64,7 @@ $(document).ready(function()
 
         }
     });
+    $('.ui-widget-header').css("background-color","#bbdfe7");
 
     //Horaire einträge aus lokalem speicher laden, falls vorhanden
     var getUserSchedule = JSON.parse(window.localStorage.getItem('userSchedule'));
@@ -116,7 +121,7 @@ $(document).ready(function()
         mouseenter: function () {
             buttonId = $(this).attr("id").split("_");
             weekDay = buttonId[1];
-            defaultInputColor = $("input[name*='AM_"+weekDay[1]+"']").css( "background-color");
+            defaultInputColor = $("input[name*='AM_"+weekDay+"']").css( "background-color");
 
             $("input[name*='AM_"+weekDay+"'], input[name*='PM_"+weekDay+"'], input[name*='AA_"+weekDay+"']").css( "background-color", btnHooverInputColor );
         },
