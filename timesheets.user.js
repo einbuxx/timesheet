@@ -3,8 +3,8 @@
 // @namespace    https://github.com/einbuxx/
 // @version      0.1
 // @description  Add some useful functions to the time sheet site!
-// @updateURL    https://raw.githubusercontent.com/Charcoal-SE/Userscripts/master/fdsc/fdsc.meta.js
-// @downloadURL  https://raw.githubusercontent.com/Charcoal-SE/Userscripts/master/fdsc/fdsc.user.js
+// @updateURL    https://github.com/einbuxx/timesheet/raw/main/timesheets.user.js
+// @downloadURL  https://github.com/einbuxx/timesheet/raw/main/timesheets.user.js
 // @author       Ralph Buchs
 // @match        https://msweb.jpf.ch/activite*
 // @icon         https://www.google.com/s2/favicons?domain=jpf.ch
