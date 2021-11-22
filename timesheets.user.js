@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TimesheetHelper
 // @namespace    https://github.com/einbuxx/
-// @version      0.2
+// @version      0.3
 // @description  Add some useful functions to the time sheet site!
 // @updateURL    https://github.com/einbuxx/timesheet/raw/main/timesheets.user.js
 // @downloadURL  https://github.com/einbuxx/timesheet/raw/main/timesheets.user.js
@@ -14,7 +14,7 @@
 // ==/UserScript==
 var $ = window.jQuery;
 
-GM_addStyle('.hoverDay { background-color: #df0ee3; !important;} .peopleBtn { cursor: pointer; !important;} .hoverWorker { background-color: #0e8ae3; !important;} .hand {cursor:pointer; !important;}');
+GM_addStyle('.hand {cursor:pointer; !important;}');
 
 
 
@@ -24,7 +24,7 @@ $(document).ready(function()
     //Config
     var btnHooverInputColor = "#C9E3E5";
 
-    //Menueintrag Horaire
+    //Neuer Menueintrag für Horaire
     $("#navbarSupportedContent ul.navbar-right ").append('<li id="buttonHoraire" class="nav-item nav-link hand">Horaire</li>');
 
     //Dialogbox für horaire
